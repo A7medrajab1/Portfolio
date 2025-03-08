@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Header (Hero Section) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 4rem; /* Bigger main title */
+    font-weight: bold;
+    margin: 0;
+    color: #00eeff;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    text-align:left;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    filter: grayscale(80%);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.247);
+    transition: filter 0.3s ease-in-out, transform 0.3s;
+}
+
+.hero-image img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background: #00eeff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 238, 255, 0.5);
+}
+
+.btn:hover {
+    background: #00ccdd;
+    transform: scale(1.05);
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(18, 18, 18, 0.95);
+    padding: 20px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #121212 !important;
+    background: #00eeff;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-category {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #2d2d2d;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+
+h2 {
+    font-size: 2.5rem;
+    color: #00eeff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    text-align: center; 
+}
+
+/* projects */
+.project {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 10px rgba(0, 238, 255, 0.2);
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 238, 255, 0.4);
+}
+
+.github-button {
+    display: inline-block;
+    background-color: #24292e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.github-button:hover {
+    background-color: #00eeff;
+}
+
+#show-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: cyan;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#show-more-btn:hover {
+    background: #00bcd4;
+}
+
+
+/* contact */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info a img {
+    width: 30px; /* Adjust size */
+    height: auto;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-info a img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    margin-top: 40px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
