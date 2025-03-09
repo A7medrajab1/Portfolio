@@ -16,19 +16,17 @@ body {
     align-items: center;
     padding: 70px 10%;
     background: linear-gradient(135deg, #1e1e1e, #292929);
-    /* height: 100vh; */
     height: auto;
     flex-wrap: wrap;
 }
 
-
 .hero-content {
     max-width: 50%;
-    padding: 60px 0 0 0;
+    padding-top: 60px;
 }
 
 .hero-content h1 {
-    font-size: 4rem; /* Bigger main title */
+    font-size: 4rem;
     font-weight: bold;
     margin: 0;
     color: #00eeff;
@@ -38,7 +36,7 @@ body {
     font-size: 1.8rem;
     letter-spacing: 1px;
     opacity: 0.8;
-    text-align:left;
+    text-align: left;
 }
 
 .hero-content p {
@@ -47,15 +45,14 @@ body {
     opacity: 0.8;
 }
 
-.hero-image{
-    padding: 50px 0 0 0;
+.hero-image {
+    padding-top: 50px;
 }
 
 .hero-image img {
     max-width: 100%;
     border-radius: 12px;
     filter: grayscale(70%);
-    /* box-shadow: 0 4px 15px rgba(94, 239, 255, 0.783); */
     box-shadow: 0 4px 15px #00eeffdd;
     transition: filter 0.3s ease-in-out, transform 0.3s;
 }
@@ -65,15 +62,17 @@ body {
     transform: scale(1.08);
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: auto;
+        padding: 50px 5%;
     }
 
     .hero-content {
         max-width: 100%;
+        padding-top: 30px;
     }
 
     .hero-content h1 {
@@ -82,6 +81,7 @@ body {
 
     .hero-content h2 {
         font-size: 1.3rem;
+        text-align: center;
     }
 
     .hero-content p {
@@ -89,12 +89,12 @@ body {
     }
 
     .hero-image img {
-        width: 100%;
         max-width: 300px;
+        margin: 0 auto;
     }
 }
 
-
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -149,8 +149,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #121212 !important;
     background: #00eeff;
-    border-radius: 8px;
-    padding: 10px 15px;
 }
 
 /* Sections */
@@ -158,6 +156,7 @@ section {
     padding: 80px 10%;
 }
 
+/* Skills */
 .skills-container {
     display: flex;
     justify-content: space-between;
@@ -187,8 +186,6 @@ section {
     box-shadow: 0 4px 10px rgba(94, 239, 255, 0.144);
 }
 
-
-
 h2 {
     font-size: 2.5rem;
     color: #00eeff;
@@ -198,10 +195,10 @@ h2 {
 }
 
 #about p {
-    text-align: center; 
+    text-align: center;
 }
 
-/* projects */
+/* Projects */
 .project {
     background: #1e1e1e;
     padding: 25px;
@@ -216,6 +213,7 @@ h2 {
     box-shadow: 0 5px 15px rgba(0, 238, 255, 0.4);
 }
 
+/* GitHub Button */
 .github-button {
     display: inline-block;
     background-color: #24292e;
@@ -231,6 +229,7 @@ h2 {
     background-color: #00eeff;
 }
 
+/* Show More Button */
 #show-more-btn {
     margin-top: 20px;
     padding: 10px 20px;
@@ -247,8 +246,7 @@ h2 {
     background: #00bcd4;
 }
 
-
-/* contact */
+/* Contact */
 .contact-info {
     display: flex;
     justify-content: center;
@@ -257,16 +255,15 @@ h2 {
 }
 
 .contact-info a img {
-    width: 30px; /* Adjust size */
+    width: 30px;
     height: auto;
     padding: 10px;
     transition: transform 0.3s;
 }
 
 .contact-info a img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
-
 
 /* Footer */
 footer {
